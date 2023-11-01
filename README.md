@@ -9,12 +9,21 @@
 
 ## 1. Program Menghitung Gaji Karyawan
 
-![Alt text](image.png)
-![Alt text](image-1.png)
-![Alt text](image-2.png)
+- Tampilan Utama
+  ![img](Gambar/gaji1.png)
+
+- Tampilan Program
+  ![img](Gambar/gaji2.png)
+
+- tampilan Program
+  ![img](Gambar/gaji3.png)
 
 ## 2. Program Penjualan barang
 
-![Alt text](image-3.png)
-![Alt text](image-4.png)
-![Alt text](image-5.png)
+- Tampilan Utama
+  ![img](Gambar/barang1.png)
+
+- Tampilan Program
+  ![img](Gambar/barang2.png)
+- Tampilan Program
+  ![img](Gambar/barang3.png)
