@@ -7,6 +7,8 @@
 
 # Latihan 2 Pemrograman Visual
 
+Untuk dokumentasi lengkapnya, silahkan klik tautan ini ke video tutorial di YouTube: [Tonton Video Dokumentasi disini](https://youtu.be/L2kOYQSrz6M)
+
 ## 1. Program Menghitung Gaji Karyawan
 
 - Tampilan Utama<br>
