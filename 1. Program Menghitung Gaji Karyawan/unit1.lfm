@@ -3,7 +3,7 @@ object Form1: TForm1
   Height = 623
   Top = 179
   Width = 461
-  Caption = 'Form1'
+  Caption = 'PT. Nusa Indah'
   ClientHeight = 623
   ClientWidth = 461
   OnCreate = FormCreate

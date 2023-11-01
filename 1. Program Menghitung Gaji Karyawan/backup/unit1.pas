@@ -9,9 +9,9 @@ uses
 
 type
 
-  { PT.Nusa Indah }
+  { TForm1 }
 
-  PT.Nusa Indah = class(TForm)
+  TForm1 = class(TForm)
     btnClose: TButton;
     btnHitung: TButton;
     btnClear: TButton;
