@@ -1,0 +1,244 @@
+object Form1: TForm1
+  Left = 1282
+  Height = 623
+  Top = 179
+  Width = 461
+  Caption = 'Form1'
+  ClientHeight = 623
+  ClientWidth = 461
+  OnCreate = FormCreate
+  object edtNama: TEdit
+    Left = 239
+    Height = 29
+    Top = 80
+    Width = 181
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+    TabOrder = 0
+    TextHint = 'Masukkan nama'
+  end
+  object edtGapok: TEdit
+    Left = 239
+    Height = 29
+    Top = 208
+    Width = 181
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    NumbersOnly = True
+    ParentFont = False
+    ReadOnly = True
+    TabOrder = 1
+    Text = '0'
+    TextHint = '0'
+  end
+  object cbJabatan: TComboBox
+    Left = 239
+    Height = 29
+    Top = 144
+    Width = 181
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ItemHeight = 21
+    Items.Strings = (
+      'Direktur'
+      'Manager'
+      'Karyawan'
+    )
+    OnChange = cbJabatanChange
+    ParentFont = False
+    TabOrder = 2
+    TextHint = 'Jabatan'
+  end
+  object rgStatus: TRadioGroup
+    Left = 36
+    Height = 76
+    Top = 264
+    Width = 384
+    Anchors = []
+    AutoFill = True
+    Caption = 'Status'
+    ChildSizing.LeftRightSpacing = 6
+    ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+    ChildSizing.EnlargeVertical = crsHomogenousChildResize
+    ChildSizing.ShrinkHorizontal = crsScaleChilds
+    ChildSizing.ShrinkVertical = crsScaleChilds
+    ChildSizing.Layout = cclTopToBottomThenLeftToRight
+    ChildSizing.ControlsPerLine = 1
+    ClientHeight = 50
+    ClientWidth = 380
+    ColumnLayout = clVerticalThenHorizontal
+    Columns = 2
+    DoubleBuffered = True
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Items.Strings = (
+      'Tetap'
+      'Honorer'
+    )
+    OnClick = rgStatusClick
+    OnSelectionChanged = rgStatusClick
+    ParentBidiMode = False
+    ParentFont = False
+    ParentDoubleBuffered = False
+    TabOrder = 3
+  end
+  object edtTunjangan: TEdit
+    Left = 243
+    Height = 29
+    Top = 368
+    Width = 177
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    NumbersOnly = True
+    ParentFont = False
+    ReadOnly = True
+    TabOrder = 4
+    Text = '0'
+    TextHint = '0'
+  end
+  object btnHitung: TButton
+    Left = 36
+    Height = 40
+    Top = 424
+    Width = 384
+    Caption = 'Total Gaji'
+    Color = clWhite
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnClick = btnHitungClick
+    ParentFont = False
+    TabOrder = 5
+  end
+  object edtTotalGaji: TEdit
+    Left = 240
+    Height = 29
+    Top = 488
+    Width = 180
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    NumbersOnly = True
+    ParentFont = False
+    ParentShowHint = False
+    ReadOnly = True
+    TabOrder = 6
+    Text = '0'
+    TextHint = '0'
+  end
+  object btnClear: TButton
+    Left = 36
+    Height = 41
+    Top = 544
+    Width = 160
+    Caption = 'Isi Data lagi'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnClick = btnClearClick
+    ParentFont = False
+    TabOrder = 7
+  end
+  object btnClose: TButton
+    Left = 252
+    Height = 41
+    Top = 544
+    Width = 168
+    Caption = 'Keluar'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    OnClick = btnCloseClick
+    ParentFont = False
+    TabOrder = 8
+  end
+  object Label1: TLabel
+    Left = 36
+    Height = 21
+    Top = 88
+    Width = 110
+    Caption = 'Nama Pegawai :'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 36
+    Height = 21
+    Top = 152
+    Width = 60
+    Caption = 'Jabatan :'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object Label3: TLabel
+    Left = 36
+    Height = 21
+    Top = 216
+    Width = 80
+    Caption = 'Gaji Pokok :'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object Label4: TLabel
+    Left = 36
+    Height = 21
+    Top = 376
+    Width = 80
+    Caption = 'Tunjangan :'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object Label5: TLabel
+    Left = 36
+    Height = 21
+    Top = 496
+    Width = 81
+    Caption = 'Gaji Bersih :'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object Label6: TLabel
+    Left = 116
+    Height = 20
+    Top = 24
+    Width = 197
+    Caption = 'Hitung Gaji Karyawan'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -16
+    Font.Name = '@HYWenHei-85W'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+end
